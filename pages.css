@@ -1,0 +1,399 @@
+.sobre{
+    font-family: 'Vinila Variable', sans-serif;
+}
+.sobre .row div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .sobre .btn-success:hover {
+    background-color: #5cb85c; /* cor do botão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1.05); /* aumenta um pouco o botão */
+  }
+
+  .sobre .p-4:hover .hover-effect {
+    opacity: 1; /* Mostra o efeito de hover */
+  }
+
+/* Serviços */
+
+.servicos {
+  background-color: #f8f9fa; /* Fundo claro para a seção */
+  padding: 50px 0;
+}
+
+.card {
+  border: none; /* Remove bordas padrão do card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra maior para destaque */
+  border-radius: 20px; /* Arredonda os cantos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao interagir */
+  background: linear-gradient(135deg, #fff, #f9f9f9); /* Gradiente suave */
+  max-width: 100%; /* Tamanho maior */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* Sombra mais intensa no hover */
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.9rem;
+  color: #333; /* Cor escura para o título */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  color: #555; /* Cor do texto */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.card-title, .card-text small {
+  color: #77e580; /* Títulos e detalhes na cor escolhida */
+}
+
+img {
+  border-radius: 20px; /* Deixa a imagem com cantos arredondados */
+}
+
+.text-muted {
+  color: #999; /* Cor mais suave para o texto secundário */
+}
+
+.card-reverse .col-md-4 {
+  order: 2; /* Altera a posição da imagem para a direita */
+}
+
+
+
+@media (max-width: 768px) {
+  .card-reverse .col-md-4,
+  .card .col-md-4 {
+    order: initial; /* Altera a ordem em telas menores */
+  }
+
+  .card {
+    max-width: 100%; /* Permite que os cards ocupem toda a largura da tela */
+  }
+}
+
+/* Efeito hover nos títulos */
+.card-title:hover {
+  color: #555; /* Muda a cor no hover */
+}
+
+/* Animação de suavidade */
+.card {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de destaque nos cards ao passar o mouse */
+.card:hover .card-body {
+  background-color: #77e580; /* Cor de fundo verde suave */
+  color: white; /* Muda a cor do texto */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: white;
+}
+
+.card:hover .card-text {
+  color: white;
+}
+
+
+.btn-servico {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #77e580; /* Cor principal */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px; /* Botão arredondado */
+  text-decoration: none; /* Remove sublinhado */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.btn-servico:hover {
+  background-color: #66d76e; /* Cor mais clara no hover */
+  transform: translateY(-5px); /* Efeito de elevação no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.btn-servico:active {
+  background-color: #5ccb66; /* Cor quando clicado */
+  transform: translateY(0); /* Volta ao normal ao clicar */
+}
+
+
+/* Contato */
+
+/* Estilo geral da seção */
+.contato {
+  background: linear-gradient(135deg, #e0f7fa, #f5f5f5); /* Fundo com gradiente suave */
+  padding: 60px 0;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Animação dos ícones no título */
+.icon-animate {
+  animation: pulse 1s infinite;
+  color: #77e580;
+}
+
+/* Título */
+.contato h2 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Efeito de animação do título */
+.animate-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo da imagem com animação de flutuação */
+.img-animate {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.img-animate:hover {
+  transform: scale(1.05); /* Ampliar levemente ao passar o mouse */
+}
+
+/* Estilo do formulário */
+.form-control {
+  border: 2px solid #77e580;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ícones dentro dos campos */
+.form-group i {
+  margin-right: 8px;
+  color: #77e580;
+}
+
+/* Animação de hover nos campos do formulário */
+.form-control:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px); /* Elevar ao passar o mouse */
+}
+
+/* Animação de fade-in nos campos do formulário */
+.form-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Torna os campos visíveis ao carregar */
+.form-animate:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botão de enviar estilizado */
+.btn-enviar {
+  background-color: #77e580;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #66d76e;
+  transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação dos ícones no formulário */
+.fas {
+  animation: bounce 2s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contato .row {
+    text-align: center;
+  }
+
+  .contato .col-lg-6 {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animação inicial ao carregar a página */
+.contato .img-animate,
+.contato .form-animate {
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
+}
+
+/* Animação pulsante para ícones no título */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Definição da animação fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação bounce para ícones no formulário */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Footer Base */
+.footer {
+  background-image: url('/imgs/back1.png'); /* Fundo escuro */
+  color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer h5 {
+  color: #77e580; /* Cor do título */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer p, .footer a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+.footer a {
+  color: #f8f9fa; /* Cor clara padrão */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #77e580; /* Cor verde nos links ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* Animação de hover no título */
+.footer h5:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #77e580;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer h5:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #77e580;
+  transform: scale(1.2); /* Aumenta o ícone */
+}
+
+/* Ícones de Contato */
+.footer-contact i {
+  color: #77e580;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Animação de entrada ao rolar a página */
+.footer {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Keyframes para a animação */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
