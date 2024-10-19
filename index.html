@@ -18,12 +18,15 @@
   <!-- Navbar -->
 <nav class="custom-navbar navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Assoc<span class="green-dot">S</span></a>
+    <a class="navbar-brand" href="/index.html">Assoc<span class="green-dot">S</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars" style="color: #77e580;"></i> <!-- Ícone de menu com cor personalizada -->
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav-list navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sobre</a>
         </li>
@@ -44,8 +47,9 @@
     <div class="container text-center text-light">
       <h1 class="display-5">Resultados <span class="highlight">consistentes</span>,
       <br>soluções <span class="highlight">inteligentes</span>.</h1>
-      <p class="lead">Transformando inovação em impacto social com soluções que respeitam a diversidade e promovem o desenvolvimento sustentável</p>
-      <a href="#page2" class="btn btn-light btn-lg">Descubra mais sobre nós!</a>
+      <p class="lead" style="color: #fff;">Transformando inovação em impacto social com soluções que respeitam a diversidade e promovem o desenvolvimento sustentável</p>
+      <a href="pagina2.html" class="btn-servico">Descubra mais sobre nós!</a>
+
     </div>
   </section>
   
@@ -53,7 +57,7 @@
 
   <section id="page2" class="sobre py-5" style="background: linear-gradient(to right, #f8f9fa, #d1e7dd);">
     <div class="container">
-      <h2 class="text-center mb-5 font-weight-bold" style="color: #333; font-size: 2.5rem;">Sobre a Assoc</h2>
+      <h2 class="text-center mb-5 font-weight-bold" style="color: #333; font-size: 2.5rem;"><b>Sobre a Assoc</b></h2>
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="p-4 border rounded shadow-lg bg-white" style="transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; position: relative;">
@@ -73,7 +77,7 @@
       </div>
       <div class="text-center mt-4">
         <p class="font-italic" style="color: #000; font-size: 1.2rem;">Estamos prontos para transformar suas ideias em soluções inovadoras. Venha crescer com a Assoc!</p>
-        <a href="#" class="btn btn-success btn-lg mt-3" style="border-radius: 30px; transition: background-color 0.3s, transform 0.3s;">Saiba mais sobre nossos serviços</a>
+        <a href="#" class="btn-servico">Saiba mais sobre nossos serviços!</a>
       </div>
     </div>
   </section>
@@ -82,7 +86,7 @@
 
   <section class="servicos py-5">
     <div class="container" style="display: flex;flex-direction: column; align-items: center;">
-      <h2 class="text-center mb-5 font-weight-bold" style="color: #333; font-size: 2.5rem;">Nossos serviços</h2>
+      <h2 class="text-center mb-5 font-weight-bold" style="color: #333; font-size: 2.5rem;"><b>Nossos serviços</b></h2>
   
       <div class="card mb-4 card-reverse" style="max-width: 900px;">
         <div class="row g-0 align-items-center">
@@ -97,7 +101,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img src="  " class="img-fluid rounded-end" alt="Serviço 1">
+            <img src="/imgs/moda.png" style="max-width: 80%; display: flex; margin: 0 auto; justify-content: center;" class="img-fluid rounded-end" alt="Serviço 1">
           </div>
         </div>
       </div>
@@ -105,7 +109,7 @@
       <div class="card mb-4" style="max-width: 900px;">
         <div class="row g-0 align-items-center">
           <div class="col-md-4">
-            <img src="image2.jpg" class="img-fluid rounded-start" alt="Serviço 2">
+            <img src="/imgs/escritorio.png" style="max-width: 90%; display: flex; margin: 0 auto;" class="img-fluid rounded-start" alt="Serviço 2">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -129,7 +133,7 @@
       <div class="row align-items-center">
         <!-- Imagem à esquerda com animação -->
         <div class="col-lg-6 text-center mb-4 mb-lg-0">
-          <img src="image1.jpg" class="img-fluid img-animate" alt="Imagem de dispositivos">
+          <img src="/imgs/contato.png" class="img-fluid img-animate" alt="Imagem de dispositivos">
         </div>
         <!-- Formulário à direita -->
         <div class="col-lg-6">
@@ -174,6 +178,7 @@
       <div class="col-md-3 mb-3 footer-links">
         <h5 class="text-uppercase">Links</h5>
         <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
           <li><a href="#" class="footer-link">Sobre</a></li>
           <li><a href="#" class="footer-link">Serviços</a></li>
           <li><a href="#" class="footer-link">Contato</a></li>
