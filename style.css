@@ -351,6 +351,9 @@ body {
     .display-5 {
       font-size: 2rem;
     }
+    .btn-enviar{
+      padding: 10px 40px !important;
+    }
   }
   
 

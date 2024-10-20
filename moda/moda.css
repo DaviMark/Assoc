@@ -1,0 +1,556 @@
+.hero_moda{
+  background-image: url(/imgs/back1.png);
+  color: #fff;
+  max-width: 100%;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+/* Estilo para o contêiner do ícone de rolagem */
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.scroll-down p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Estilo do ícone de mouse */
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Animação da roda do mouse */
+.mouse-wheel {
+  width: 6px;
+  height: 10px;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+
+/* Animação de rolagem */
+@keyframes scroll {
+  0% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 35px;
+    opacity: 0;
+  }
+}
+
+/* Estilo da próxima seção */
+.next-section {
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Fim do primeiro section 1 */
+
+
+/* Estilo geral da seção para preencher a tela */
+.moda-section-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Preenche a altura da tela inteira */
+    width: 100%; /* Preenche toda a largura */
+    background: linear-gradient(to right, #f8f9fa, #d1e7dd); 
+    padding: 20px;
+  }
+  
+  .moda-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas, uma para a imagem, outra para o texto */
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .moda-left {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .moda-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .moda-right h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .moda-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    background-color: #77e580;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #5bc46a;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .moda-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .moda-right h1 {
+      font-size: 2rem;
+    }
+  
+    .moda-right p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animação de entrada para a imagem e texto */
+.moda-section-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s forwards ease-in-out;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito hover para o botão */
+.cta-button:hover {
+    background-color: #5bc46a;
+    transform: scale(1.05);
+}
+
+/* Adiciona uma animação ao rolar a página */
+.moda-right, .moda-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInRight 1s forwards ease-in-out;
+    transition: all 0.5s ease;
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Quando o usuário passa o mouse sobre a imagem, ela aumenta levemente */
+.moda-image:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação de entrada para os blocos de texto */
+.moda-section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInSection 1.5s forwards ease-in-out;
+}
+
+@keyframes fadeInSection {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeitos hover nos blocos de texto */
+.moda-text-container div:hover {
+    transform: translateY(-10px); /* Eleva levemente o bloco ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    transition: all 0.3s ease;
+}
+
+/* Sombra ao passar o mouse sobre os blocos */
+.moda-text-container div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Section 2 */
+
+/* Estilo geral da seção */
+.moda-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+  }
+  
+  .moda-top {
+    display: flex;
+    flex-direction: column; /* Alinhar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .moda-top h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #333;
+    margin-top: 20px; /* Espaço acima do título */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .moda-top img {
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho máximo da imagem */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Container dos textos para espaçar lado a lado */
+  .moda-text-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os textos */
+    gap: 20px; /* Espaçamento entre os blocos de texto */
+    text-align: center;
+  }
+  
+  /* Estilo para cada bloco de texto */
+  .moda-text-container div {
+    flex: 1; /* Todos os blocos ocupam o mesmo espaço */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+  }
+  
+  .moda-text-container h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .moda-text-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .moda-text-container {
+      flex-direction: column; /* Coloca os textos um abaixo do outro */
+      align-items: center;
+    }
+  
+    .moda-text-container div {
+      max-width: 100%;
+      margin-bottom: 20px; /* Espaço entre os textos quando empilhados */
+    }
+  
+    .moda-text-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .moda-text-container p {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* Section 3 */
+#automacao-chatbots {
+  background: linear-gradient(to right, #f8f9fa, #d1e7dd); 
+}
+
+.robot-img {
+  max-width: 80%;
+  transition: transform 0.5s ease;
+}
+
+.robot-img:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #77e580;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #77e580;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-icon:hover {
+  background-color: #66d36f;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Section 4 */
+#conteudo-engajamento {
+  background-color: #f5f5f5;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.content-box {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-box:hover {
+  background-color: #77e580;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.content-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Section 6 */
+#monitoramento-performance {
+  background-color: #f5f5f5;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.feature-box {
+  display: flex;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  background-color: #77e580;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+  font-size: 1.5rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  background-color: #77e580;
+  color: #fff;
+}
+
+.feature-text h4 {
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.feature-text p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Fim */
+
+.final{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* Subir */
+
+.subir a {
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subir a:hover {
+  background-color: #66d370;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adicionar um efeito de aparecer quando o botão é visível */
+.subir a.show {
+  animation: fadeIn 0.5s forwards;
+}
+
+.subir a.hide {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
