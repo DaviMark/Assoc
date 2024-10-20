@@ -226,7 +226,7 @@ img {
 .btn-enviar {
   background-color: #77e580;
   color: white;
-  padding: 15px 40px;
+  padding: 12px 100px;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
@@ -397,3 +397,7 @@ img {
     transform: translateY(0);
   }
 }
+
+
+/* Medias */
+
