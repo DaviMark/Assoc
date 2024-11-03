@@ -105,6 +105,24 @@
             text-align: center; /* Centraliza o texto do footer */
         }
 
+        /* Estilo do botão de voltar */
+        .back-button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #4b79a1;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px; /* Adiciona um espaço acima do botão */
+        }
+
+        .back-button:hover {
+            background-color: #77e580;
+            transform: scale(1.1);
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             h1 {
@@ -122,6 +140,10 @@
 
             .progress {
                 width: 90%; /* Aumenta a largura da barra de progresso em telas pequenas */
+            }
+
+            .back-button {
+                font-size: 1rem; /* Ajusta o tamanho do botão em telas pequenas */
             }
         }
 
@@ -155,6 +177,8 @@
             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
+
+        <button class="back-button" onclick="window.history.back();">Voltar</button>
 
         <div class="footer">© 2024 Assoc. Todos os direitos reservados.</div>
     </div>
