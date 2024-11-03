@@ -252,7 +252,7 @@
   
   .moda-top img {
     width: 100%;
-    max-width: 800px; /* Limita o tamanho máximo da imagem */
+    max-width: 40%; /* Limita o tamanho máximo da imagem */
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -552,5 +552,39 @@ img:hover {
   to {
     opacity: 0;
     transform: translateY(10px);
+  }
+}
+
+
+/* Detalhes */
+
+.moda-right h1{
+  color: #77e580;
+}
+
+.moda-top h1, .text1 h1, .text2 h1, .text3 h1, .section-title, .timeline-content h4,.content-box h4,.feature-text h4{
+  color: #77e580;
+}
+
+@media (max-width: 768px) {
+  .hero_moda{
+    padding-top: 30%;
+  }
+  .moda-top h1{
+    font-size: 2rem;
+  }
+
+  .moda-top img{
+    max-width: 100%;
+  }
+  .robot-img{
+    max-width: 80%;
+    padding-bottom: 10%;
+  }
+  .section-title{
+    text-align: center;
+  }
+  .py-5 img{
+    padding-top: 10%;
   }
 }
