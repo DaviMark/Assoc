@@ -1,0 +1,460 @@
+.sobre{
+    font-family: 'Vinila Variable', sans-serif;
+}
+.sobre .row div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .sobre .btn-success:hover {
+    background-color: #5cb85c; /* cor do botão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1.05); /* aumenta um pouco o botão */
+  }
+
+  .sobre .p-4:hover .hover-effect {
+    opacity: 1; /* Mostra o efeito de hover */
+  }
+
+/* Serviços */
+
+.servicos {
+  background-color: #f8f9fa; /* Fundo claro para a seção */
+  padding: 50px 0;
+}
+
+.card {
+  border: none; /* Remove bordas padrão do card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra maior para destaque */
+  border-radius: 20px; /* Arredonda os cantos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao interagir */
+  background: linear-gradient(135deg, #fff, #f9f9f9); /* Gradiente suave */
+  max-width: 100%; /* Tamanho maior */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* Sombra mais intensa no hover */
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.9rem;
+  color: #333; /* Cor escura para o título */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  color: #555; /* Cor do texto */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.card-title, .card-text small {
+  color: #77e580; /* Títulos e detalhes na cor escolhida */
+}
+
+img {
+  border-radius: 20px; /* Deixa a imagem com cantos arredondados */
+}
+
+.text-muted {
+  color: #999; /* Cor mais suave para o texto secundário */
+}
+
+.card-reverse .col-md-4 {
+  order: 2; /* Altera a posição da imagem para a direita */
+}
+
+
+
+@media (max-width: 768px) {
+  .card-reverse .col-md-4,
+  .card .col-md-4 {
+    order: initial; /* Altera a ordem em telas menores */
+  }
+
+  .card {
+    max-width: 100%; /* Permite que os cards ocupem toda a largura da tela */
+  }
+}
+
+/* Efeito hover nos títulos */
+.card-title:hover {
+  color: #555; /* Muda a cor no hover */
+}
+
+/* Animação de suavidade */
+.card {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de destaque nos cards ao passar o mouse */
+.card:hover .card-body {
+  background-color: #77e580; /* Cor de fundo verde suave */
+  color: white; /* Muda a cor do texto */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: white;
+}
+
+.card:hover .card-text {
+  color: white;
+}
+
+
+.btn-servico {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #77e580; /* Cor principal */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px; /* Botão arredondado */
+  text-decoration: none; /* Remove sublinhado */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.btn-servico:hover {
+  background-color: #66d76e; /* Cor mais clara no hover */
+  transform: translateY(-5px); /* Efeito de elevação no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.btn-servico:active {
+  background-color: #5ccb66; /* Cor quando clicado */
+  transform: translateY(0); /* Volta ao normal ao clicar */
+}
+
+
+/* Estilização da Seção de Contato */
+.contato-secao {
+  background: radial-gradient(circle at top right, #e8f5e9, #c8e6c9);
+  padding: 80px 0;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Título */
+.titulo-contato {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #388e3c;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(56, 142, 60, 0.2);
+  position: relative;
+  animation: fadeInDown 1s forwards;
+}
+
+/* Ícone animado no título */
+.icone-titulo {
+  margin-left: 10px;
+  color: #81c784;
+  animation: bounce 1.5s infinite;
+}
+
+/* Estilização da Imagem */
+.img-hover {
+  max-width: 70%;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulário */
+.formulario {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 1s forwards;
+}
+
+.campo-formulario {
+  margin-bottom: 20px;
+}
+
+.label-formulario {
+  font-weight: 600;
+  color: #388e3c;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-formulario {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #81c784;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-formulario:focus {
+  border-color: #66bb6a;
+  box-shadow: 0 0 10px rgba(102, 187, 106, 0.2);
+}
+
+/* Botão de Enviar */
+.botao-enviar {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 12px 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(56, 142, 60, 0.2);
+}
+
+.botao-enviar:hover {
+  background-color: #2e7d32;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 142, 60, 0.3);
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo-contato {
+    font-size: 2.2rem;
+  }
+
+  .formulario {
+    padding: 20px;
+  }
+}
+
+
+/* Footer Base */
+.footer {
+  background-image: url('/imgs/back1.png'); /* Fundo escuro */
+  color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer h5 {
+  color: #77e580; /* Cor do título */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer p, .footer a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+.footer a {
+  color: #f8f9fa; /* Cor clara padrão */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #77e580; /* Cor verde nos links ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* Animação de hover no título */
+.footer h5:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #77e580;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer h5:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #77e580;
+  transform: scale(1.2); /* Aumenta o ícone */
+}
+
+/* Ícones de Contato */
+.footer-contact i {
+  color: #77e580;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Animação de entrada ao rolar a página */
+.footer {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Keyframes para a animação */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Medias */
+
+/* Projetos ja Desenvolvidos */
+
+.projetos-section {
+  padding: 50px 20px;
+  background-color: #f8f9fc;
+  text-align: center;
+}
+
+.titulo-projetos {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.carrossel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-projeto {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-projeto {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.nome-projeto {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.descricao-projeto {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carrossel {
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+  }
+  .carrossel::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+}
