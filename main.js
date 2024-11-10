@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Para nao ver o codigo fonte
-
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault(); // Impede o menu de contexto (botão direito do mouse)
 });
