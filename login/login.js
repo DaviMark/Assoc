@@ -10,14 +10,14 @@ const loginForm = document.getElementById("login-form");
 assocBtn.addEventListener("click", () => {
   introScreen.classList.add("hidden");
   loginScreen.classList.remove("hidden");
-  welcomeText.textContent = "Bem-vindo Mochileiro!";
+  welcomeText.textContent = "Bem-vindo, mochileiro!";
 });
 
 // Ação ao clicar no botão "Você é um Cliente?"
 clienteBtn.addEventListener("click", () => {
   introScreen.classList.add("hidden");
   loginScreen.classList.remove("hidden");
-  welcomeText.textContent = "Bem-vindo Cliente Assoc!";
+  welcomeText.textContent = "Bem-vindo, cliente Assoc!";
 });
 
 // Validação do formulário
