@@ -71,6 +71,45 @@
             </ul>
           </li> -->
           <li><a href="#contact">Contato</a></li>
+          
+          <li><a href="#"></a></li>
+
+          <li style="
+      display: inline-block;
+      margin: 10px;
+      border-radius: 12px;
+      padding: 10px 20px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
+    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.3)';"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';">
+  <span style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #5ec469, #22b931);
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path 0.4s ease;">
+  </span>
+  <a href="/login/login.html" target="_blank" style="
+        text-decoration: none;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        position: relative;
+        z-index: 1;"
+      onmouseover="this.parentElement.querySelector('span').style.clipPath='circle(150% at 50% 50%)';"
+      onmouseout="this.parentElement.querySelector('span').style.clipPath='circle(0% at 50% 50%)';">
+    Acessar
+  </a>
+</li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -624,7 +663,7 @@
           <h3>Start Boost</h3>
           <h3 style="font-size: 0.9rem;">Plano Gratuito</h3>
           <p class="description">Para empresas em fase inicial que precisam construir uma base sólida para o crescimento.</p>
-          <h4><sup>$</sup>600<span> / mês</span></h4>
+          <h4><sup>R$</sup>600<span> / mês</span></h4>
           <a href="#" class="cta-btn">Entre em contato</a>
           <p class="text-center small">Não é necessário cartão de crédito</p>
           <ul style="font-size: 0.8rem;">
@@ -646,7 +685,7 @@
           <h3>Optimize</h3>
           <h3 style="font-size: 0.9rem;">Plano Empresarial</h3>
           <p class="description">Para empresas que buscam melhorar e otimizar as estratégias já existentes, com foco em eficiência e automação.</p>
-          <h4><sup>$</sup>1200<span> / mês</span></h4>
+          <h4><sup>R$</sup>1200<span> / mês</span></h4>
           <a href="#" class="cta-btn">Entre em contato</a>
           <p class="text-center small">Não é necessário cartão de crédito</p>
           <ul style="font-size: 0.8rem;">
@@ -675,7 +714,7 @@
           <h3 class="text-infinity" style="font-size: 3rem;">Infinity</h3>
           <h3 style="font-size: 0.9rem; color: #fff;">Plano Mega</h3>
           <p class="description">Plano completo e personalizado, ideal para empresas que querem uma solução 360° em marketing e tecnologia, com total suporte e inovação.</p>
-          <h4 style="font-size: 2rem;"> <sup>$</sup> Negocie conosco!</h4>
+          <h4 style="font-size: 2rem;"> <sup></sup> Negocie conosco!</h4>
           <a href="#" class="cta-btn" style="color: #fff;">Entre em contato</a>
           <p class="text-center small">Não é necessário cartão de crédito</p>
           <ul style="color: #fff; font-size: 0.8rem;">

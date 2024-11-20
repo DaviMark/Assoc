@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Assoc</title>
+  <link rel="stylesheet" href="/login/login.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Assoc Growth Machine">
+     <meta property="og:description" content="Assoc Growth Machine: Empresa de tecnologia e marketing que ajuda empresas e pequenos negócios a automatizar processos, desenvolver melhorias e aumentar a visibilidade da marca. Conecte-se, aprenda e cresça com nossa plataforma.">
+     <meta property="og:image" content="/imgs/Ativo 1.png">
+     <meta property="og:url" content="https://assocs.vercel.app/index.html">
+     <meta property="og:type" content="website">
+     <meta property="og:locale" content="pt_BR">
+     <!-- Favicons -->
+  <link href="/imgs/Ativo 1.png" rel="icon">
+  <link href="/imgs/Ativo 1.png" rel="apple-touch-icon">
+   
+</head>
+<body>
+  <!-- Logo da Empresa -->
+  <div class="logo-container">
+    <img src="/imgs/Ativo.png" alt="Logo da Empresa">
+  </div>
+
+  <!-- Tela Inicial -->
+  <div id="intro-screen">
+    <button id="assoc-btn" class="intro-button">
+      <i class="fas fa-users"></i> Você é um Assoc?
+    </button>
+    <button id="cliente-btn" class="intro-button">
+      <i class="fas fa-user"></i> Você é um Cliente?
+    </button>
+  </div>
+
+  <!-- Tela de Login -->
+  <div id="login-screen" class="hidden">
+    <h1 id="welcome-text" class="fade-in"></h1>
+    <form id="login-form">
+      <div class="input-group">
+        <i class="fas fa-user-circle"></i>
+        <input type="text" id="username" placeholder="Digite seu usuário" required>
+      </div>
+      
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Digite sua senha" required>
+      </div>
+      
+      <button type="submit" class="login-button">
+        <i class="fas fa-sign-in-alt"></i> Entrar
+      </button>
+    </form>
+  </div>
+
+  <script src="/login/login.js"></script>
+</body>
+</html>
